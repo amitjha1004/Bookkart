@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Bookkart</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"; src="jquery.js "charset="utf-8"></script>
+      <!-- <script src="script.js"></script> -->
+  </head>
+  <body background="Images/library.jpeg">
+    <h1 id="header">Bookkart</h1>
+    <div class="cart-button">
+      <button type="button" name="button" class="continuebutton"> Continue Shopping</button>
+      <button type="button" name="button" class="cartbutton"> Cart</button>
+    </div>
+    <div class="main-container">
+      <div class="container">
+        <p class="item">Python</p>
+        <img src="Images/python.jpeg" width="150px" height="150px">
+        <p class="price">30</p>
+        Qty <input type="number" class="qty" value="1" min="1">
+        <button class="add">Add to cart</button>
+      </div>
+      <div class="container">
+        <p class="item">Java</p>
+        <img src="Images/java.jpeg" width="150px" height="150px">
+        <p class="price">230</p>
+        Qty <input type="number" class="qty" value="1" min="1">
+        <button class="add">Add to cart</button>
+      </div>
+      <div class="container">
+        <p class="item">C++</p>
+        <img src="Images/cplus.jpeg" width="150px" height="150px">
+        <p class="price">130</p>
+        Qty <input type="number" class="qty" value="1" min="1">
+        <button class="add">Add to cart</button>
+      </div>
+    </div>
+
+    <div class="cart-container">
+      <h1>My Cart</h1>
+      <table id="mycart" border="1">
+        <tr>
+          <th>Item name</th>
+          <th>Qty</th>
+          <th>Price</th>
+          <th>Total</th>
+        </tr>
+        <tr style="display: none; border-top: 2px solid black">
+          <td colspan="3">Subtotal</td>
+          <td class="right subtotal"></td>
+        </tr>
+      </table>
+      <div class="checkotbutton">
+        <button type="button" name="button" class="checkoutbutton"> Checkout</button>
+      </div>
+    </div>
+
+    <div class="summary">
+      <h1>Checkout Summary</h1>
+    </div>
+    <div class="pay">
+      <select class="paymentgateway">
+        <option value="" selected disabled hidden>Payment Type</option>
+        <option value="Net Banking">Net Banking</option>
+        <option value="Debit Card">Debit Card</option>
+        <option value="Credit Card">Credit Card</option>
+        <option value="Paytm" class="Paytm">Paytm</option>
+      </select>
+      <button type="button" name="button" class="paybutton"> Pay</button>
+    </div>
+    <div class="checkout"></div>
+
+    <div class="img">
+      <img src="Images/qrcode.jpeg">
+    </div>
+    <script src="script.js"></script>
+
+  </body>
+</html>
